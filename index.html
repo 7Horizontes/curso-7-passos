@@ -1,345 +1,156 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>7 Passos | Ganhar Dinheiro com a Internet</title>
-  <meta name="description" content="Conheça os 7 passos para aprender sobre oportunidades na internet.">
-
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    :root {
-      --green: #39ff88;
-      --dark: #080b0a;
-      --card: #111714;
-      --text: #f5f7f5;
-      --muted: #b2beb6;
-    }
-
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      background: var(--dark);
-      color: var(--text);
-      line-height: 1.6;
-    }
-
-    .container {
-      width: min(100% - 36px, 1050px);
-      margin: auto;
-    }
-
-    header {
-      padding: 22px 0;
-      border-bottom: 1px solid #24332a;
-    }
-
-    .logo {
-      color: var(--green);
-      font-size: 23px;
-      font-weight: 900;
-      letter-spacing: 1px;
-    }
-
-    .hero {
-      text-align: center;
-      padding: 75px 0 55px;
-    }
-
-    .tag {
-      display: inline-block;
-      padding: 7px 15px;
-      margin-bottom: 22px;
-      border: 1px solid #277d4b;
-      border-radius: 30px;
-      color: var(--green);
-      font-size: 13px;
-      font-weight: bold;
-    }
-
-    h1 {
-      max-width: 850px;
-      margin: 0 auto 22px;
-      font-size: clamp(35px, 6vw, 60px);
-      line-height: 1.08;
-      font-weight: 900;
-    }
-
-    h1 span {
-      color: var(--green);
-    }
-
-    .subtitle {
-      max-width: 690px;
-      margin: 0 auto 30px;
-      color: var(--muted);
-      font-size: 18px;
-    }
-
-    .button {
-      display: inline-block;
-      padding: 17px 28px;
-      border-radius: 9px;
-      background: var(--green);
-      color: #07140c;
-      text-decoration: none;
-      font-size: 17px;
-      font-weight: 900;
-      box-shadow: 0 0 25px #39ff8830;
-      transition: transform 0.2s;
-    }
-
-    .button:hover {
-      transform: translateY(-3px);
-    }
-
-    .note {
-      display: block;
-      margin-top: 12px;
-      color: #aab5ad;
-      font-size: 12px;
-    }
-
-    section {
-      padding: 55px 0;
-    }
-
-    .section-title {
-      margin-bottom: 14px;
-      text-align: center;
-      font-size: clamp(27px, 4vw, 39px);
-      line-height: 1.2;
-    }
-
-    .section-description {
-      max-width: 700px;
-      margin: 0 auto 30px;
-      color: var(--muted);
-      text-align: center;
-    }
-
-    .steps {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 16px;
-    }
-
-    .step {
-      padding: 23px;
-      background: var(--card);
-      border: 1px solid #24352a;
-      border-radius: 13px;
-    }
-
-    .step-number {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: 36px;
-      height: 36px;
-      margin-bottom: 12px;
-      border-radius: 9px;
-      background: #173d27;
-      color: var(--green);
-      font-weight: 900;
-    }
-
-    .step h3 {
-      margin-bottom: 8px;
-      font-size: 19px;
-    }
-
-    .step p {
-      color: var(--muted);
-      font-size: 14px;
-    }
-
-    .offer {
-      padding: 38px 25px;
-      text-align: center;
-      background: linear-gradient(145deg, #13251a, #0c110e);
-      border: 1px solid #2d7045;
-      border-radius: 18px;
-    }
-
-    .offer h2 {
-      margin-bottom: 12px;
-      font-size: clamp(27px, 4vw, 40px);
-    }
-
-    .price-label {
-      color: var(--muted);
-      margin-top: 22px;
-    }
-
-    .price {
-      margin: 0 0 20px;
-      color: var(--green);
-      font-size: clamp(48px, 8vw, 66px);
-      font-weight: 900;
-      line-height: 1.2;
-    }
-
-    .offer-description {
-      max-width: 570px;
-      margin: 0 auto 25px;
-      color: var(--muted);
-    }
-
-    .disclaimer {
-      max-width: 650px;
-      margin: 18px auto 0;
-      color: #9eaaa1;
-      font-size: 12px;
-    }
-
-    footer {
-      padding: 28px 0;
-      border-top: 1px solid #24332a;
-      color: #8f9a92;
-      text-align: center;
-      font-size: 12px;
-    }
-
-    @media (max-width: 650px) {
-      .hero {
-        padding-top: 52px;
-      }
-
-      .steps {
-        grid-template-columns: 1fr;
-      }
-
-      .button {
-        width: 100%;
-        max-width: 400px;
-      }
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Conheça o treinamento Aprenda a Ganhar Dinheiro com a Internet: 7 passos, ferramentas digitais e materiais de apoio para começar.">
+<title>7 Passos | Aprenda a Ganhar Dinheiro com a Internet</title>
+<style>
+:root{--bg:#080b0a;--panel:#111714;--green:#58f28b;--mint:#c7ffda;--text:#f6fff8;--muted:#b1c0b5;--line:#25382c}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:radial-gradient(ellipse at 50% 0%,#143321 0%,var(--bg) 48%);color:var(--text);font-family:Inter,Arial,Helvetica,sans-serif;line-height:1.6}
+.wrap{width:min(1080px,92%);margin:auto}
+.nav{display:flex;justify-content:space-between;align-items:center;padding:22px 0;color:var(--mint);font-weight:800;letter-spacing:.08em;font-size:.82rem}
+.pill{border:1px solid #2f6945;border-radius:999px;padding:7px 12px;color:var(--mint);font-size:.76rem}
+.hero{padding:52px 0 68px;display:grid;grid-template-columns:1.15fr .85fr;gap:38px;align-items:center}
+.eyebrow{color:var(--green);font-weight:800;letter-spacing:.16em;text-transform:uppercase;font-size:.78rem}
+.hero h1{font-size:clamp(2.4rem,5.8vw,4.7rem);line-height:.99;letter-spacing:-.055em;margin:16px 0 22px}
+.hero h1 span{color:var(--green)}
+.lead{font-size:1.13rem;color:var(--muted);max-width:620px}
+.visual{min-height:340px;border:1px solid #28553a;border-radius:28px;background:linear-gradient(145deg,#14271b,#080d0a 68%);padding:25px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;box-shadow:0 25px 80px #0008}
+.visual:before{content:"";position:absolute;width:280px;height:280px;border-radius:50%;background:#38e8791c;filter:blur(22px)}
+.book{position:relative;z-index:1;width:225px;min-height:280px;padding:24px 19px;border-radius:8px 18px 18px 8px;background:linear-gradient(145deg,#183d27,#07130b);border:1px solid #65ff9a;box-shadow:16px 22px 35px #0008;transform:rotate(-5deg)}
+.book .seven{font-size:6rem;font-weight:950;line-height:1;color:var(--green);text-shadow:0 0 30px #4cff8b55}
+.book h2{font-size:1.2rem;line-height:1.12;margin:8px 0}
+.book p{font-size:.7rem;color:#c7f5d4;text-transform:uppercase;letter-spacing:.08em}
+.chips{display:flex;flex-wrap:wrap;gap:9px;margin:24px 0}
+.chips span{background:#12251a;border:1px solid #284d35;color:#d6ffe2;border-radius:999px;padding:7px 11px;font-size:.84rem}
+.cta{display:inline-block;text-decoration:none;background:var(--green);color:#06140a;font-weight:900;border-radius:12px;padding:15px 22px;box-shadow:0 10px 30px #4aff8524}
+.fine{font-size:.8rem;color:#9eafa3;margin-top:12px}
+.section{padding:62px 0;border-top:1px solid #ffffff12}
+.section h2{font-size:clamp(1.8rem,4vw,2.7rem);line-height:1.1;letter-spacing:-.035em;margin:10px 0 14px}
+.sub{color:var(--muted);max-width:720px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:28px}
+.card{background:linear-gradient(160deg,#131d17,#0c110e);border:1px solid var(--line);border-radius:18px;padding:22px}
+.num{font-size:.8rem;color:var(--green);font-weight:900;letter-spacing:.12em}
+.card h3{margin:8px 0;font-size:1.08rem}
+.card p{margin:0;color:var(--muted);font-size:.94rem}
+.offer{border:1px solid #38754d;border-radius:24px;background:linear-gradient(135deg,#14291b,#0b110d);padding:clamp(24px,5vw,48px);display:grid;grid-template-columns:1fr auto;gap:24px;align-items:center}
+.price small{color:var(--muted);display:block}
+.price strong{font-size:3rem;color:var(--green);line-height:1.1}
+.price del{color:#9eafa3}
+.list{padding-left:20px;color:var(--muted)}
+.list li{padding:5px 0}
+footer{padding:28px 0 45px;color:#8ea194;font-size:.82rem;border-top:1px solid #ffffff12}
+@media(max-width:760px){
+.hero{grid-template-columns:1fr;padding-top:30px}
+.visual{min-height:300px}
+.grid{grid-template-columns:1fr}
+.offer{grid-template-columns:1fr}
+.nav{gap:12px}
+.hero h1{font-size:3rem}
+}
+</style>
 </head>
-
 <body>
-  <header>
-    <div class="container">
-      <div class="logo">7 PASSOS</div>
-    </div>
-  </header>
-
-  <main>
-    <section class="hero">
-      <div class="container">
-        <span class="tag">TREINAMENTO DIGITAL</span>
-
-        <h1>
-          Aprenda a Ganhar Dinheiro com a Internet:
-          <span>os 7 Passos que Ninguém te Conta</span>
-        </h1>
-
-        <p class="subtitle">
-          Conheça ferramentas, estratégias e possibilidades do ambiente digital
-          para aprender novas habilidades e dar seus primeiros passos pela internet.
-        </p>
-
-        <a class="button" href="https://pay.kiwify.com.br/6C5KaRs">
-          QUERO ACESSAR O TREINAMENTO
-        </a>
-
-        <span class="note">
-          Acesso pela plataforma de pagamento Kiwify.
-        </span>
-      </div>
-    </section>
-
-    <section>
-      <div class="container">
-        <h2 class="section-title">O que você vai aprender?</h2>
-
-        <p class="section-description">
-          Um conteúdo organizado em 7 etapas para conhecer diferentes recursos
-          e oportunidades no universo digital.
-        </p>
-
-        <div class="steps">
-          <article class="step">
-            <div class="step-number">1</div>
-            <h3>Primeiros passos na internet</h3>
-            <p>Conheça o ambiente digital e entenda as possibilidades de começar.</p>
-          </article>
-
-          <article class="step">
-            <div class="step-number">2</div>
-            <h3>Ferramentas digitais</h3>
-            <p>Aprenda a conhecer e utilizar ferramentas úteis para suas atividades online.</p>
-          </article>
-
-          <article class="step">
-            <div class="step-number">3</div>
-            <h3>Edição de documentos</h3>
-            <p>Conheça recursos para criar, editar e organizar documentos digitais.</p>
-          </article>
-
-          <article class="step">
-            <div class="step-number">4</div>
-            <h3>Burladores e KL</h3>
-            <p>Conteúdo apresentado conforme os tópicos e materiais do treinamento.</p>
-          </article>
-
-          <article class="step">
-            <div class="step-number">5</div>
-            <h3>Criação de LARA para resumo rápido</h3>
-            <p>Conheça o processo de criação de LARA e sua aplicação nos resumos.</p>
-          </article>
-
-          <article class="step">
-            <div class="step-number">6</div>
-            <h3>Estratégias para o ambiente digital</h3>
-            <p>Explore formas de organizar suas atividades e desenvolver habilidades online.</p>
-          </article>
-
-          <article class="step">
-            <div class="step-number">7</div>
-            <h3>Organização e próximos passos</h3>
-            <p>Estruture seu aprendizado e identifique como continuar evoluindo.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="container">
-        <div class="offer">
-          <h2>Comece hoje seu aprendizado</h2>
-
-          <p class="offer-description">
-            Acesse o treinamento completo e conheça os 7 passos apresentados
-            no conteúdo.
-          </p>
-
-          <div class="price-label">INVESTIMENTO ÚNICO</div>
-          <div class="price">R$ 29,99</div>
-
-          <a class="button" href="https://pay.kiwify.com.br/6C5KaRs">
-            QUERO GARANTIR MEU ACESSO
-          </a>
-
-          <p class="disclaimer">
-            Os resultados dependem da aplicação, do esforço individual e de
-            fatores externos. O treinamento não garante ganhos financeiros.
-            Confira as condições de acesso na página de pagamento.
-          </p>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="container">
-      Treinamento digital 7 Passos | © 2026
-    </div>
-  </footer>
+<header class="wrap nav">
+<div>7 PASSOS <span style="color:#fff">/ TREINAMENTO DIGITAL</span></div>
+<div class="pill">ACESSO DIGITAL</div>
+</header>
+<main>
+<section class="wrap hero">
+<div>
+<div class="eyebrow">Seu próximo passo começa aqui</div>
+<h1>Aprenda a ganhar dinheiro com a <span>internet</span></h1>
+<p class="lead">Um treinamento introdutório para conhecer ferramentas digitais, organizar ideias e transformar habilidades em oportunidades online, com um plano prático para começar.</p>
+<div class="chips">
+<span>7 etapas práticas</span>
+<span>Ferramentas digitais</span>
+<span>Materiais de apoio</span>
+</div>
+<a class="cta" href="#oferta">QUERO CONHECER O TREINAMENTO ↓</a>
+<p class="fine">Conteúdo educativo. Não há promessa de renda garantida.</p>
+</div>
+<div class="visual" aria-label="Capa ilustrativa do curso">
+<div class="book">
+<div class="seven">7</div>
+<h2>PASSOS PARA EXPLORAR OPORTUNIDADES ONLINE</h2>
+<p>Ferramentas • prática • estratégia</p>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="wrap">
+<div class="eyebrow">O que você vai aprender</div>
+<h2>Conhecimento prático, organizado em etapas</h2>
+<p class="sub">Explore recursos digitais e aprenda a utilizá-los de forma responsável no desenvolvimento dos seus projetos.</p>
+<div class="grid">
+<article class="card">
+<div class="num">PASSO 01</div>
+<h3>Encontrar oportunidades</h3>
+<p>Pesquisar demandas, comparar ideias e escolher uma atividade compatível com suas habilidades.</p>
+</article>
+<article class="card">
+<div class="num">PASSO 02</div>
+<h3>Ferramentas de pesquisa</h3>
+<p>Conhecer plataformas online, recursos de IA e formas de organizar referências e informações.</p>
+</article>
+<article class="card">
+<div class="num">PASSO 03</div>
+<h3>Edição de documentos</h3>
+<p>Editar, formatar, converter e organizar documentos digitais com ferramentas apropriadas.</p>
+</article>
+<article class="card">
+<div class="num">PASSO 04</div>
+<h3>Burladores e KL</h3>
+<p>Introdução aos tópicos e termos apresentados no treinamento, com uso responsável e dentro das regras aplicáveis.</p>
+</article>
+<article class="card">
+<div class="num">PASSO 05</div>
+<h3>Criação de LARA para resumo rápido</h3>
+<p>Conheça o tópico de criação de LARA abordado no treinamento e sua aplicação prática conforme o conteúdo disponibilizado.</p>
+</article>
+<article class="card">
+<div class="num">PASSO 06–07</div>
+<h3>Publicar, testar e melhorar</h3>
+<p>Estruturar uma oferta, apresentar seu trabalho, acompanhar respostas e ajustar a estratégia com base nos resultados.</p>
+</article>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="wrap">
+<div class="eyebrow">Você também recebe</div>
+<h2>Materiais para colocar o aprendizado em prática</h2>
+<ul class="list">
+<li>Guia digital com os 7 passos.</li>
+<li>Prompts e sugestões para trabalhar com ferramentas de IA.</li>
+<li>Planilha de plano de ação e acompanhamento.</li>
+<li>Checklist para organizar os próximos passos.</li>
+</ul>
+</div>
+</section>
+<section class="section" id="oferta">
+<div class="wrap">
+<div class="offer">
+<div>
+<div class="eyebrow">Comece hoje</div>
+<h2>Aprenda no seu ritmo</h2>
+<p class="sub">Acesse o material digital e avance etapa por etapa. O resultado depende da sua aplicação, experiência e das oportunidades disponíveis.</p>
+</div>
+<div class="price">
+<small>Preço do treinamento</small>
+<strong>R$ 29,99</strong>
+<p class="fine">Pagamento e acesso pela Kiwify</p>
+<a class="cta" href="https://pay.kiwify.com.br/6C5KaRs" target="_blank" rel="noopener">QUERO MEU ACESSO</a>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer>
+<div class="wrap">©️ Treinamento 7 Passos. Material educativo. Ferramentas, planos e condições de terceiros podem mudar. Não há garantia de ganhos financeiros.</div>
+</footer>
 </body>
 </html>
